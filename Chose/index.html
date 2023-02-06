@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title> CHorse Games </title>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="main-nav-left-part">
+            <img src="./img/main-logo.png" alt="Logo" class="main-nav-logo">
+        </div>
+        <!-- /.main-nav-left-part -->
+        <div class="main-nav-right-part">
+            <div class="burger-menu-img-wrapper">
+                <img src="./img/burger.png" alt="" class="burger-menu-ing">
+            </div>
+            <!-- /.burger-menu-img-wrapper -->
+            <div class="main-nav-link-wrapper">
+                <a href="./index.html"> CHorse Games </a>
+            </div>
+            <!-- /.main-nav-link-wrapper -->
+
+
+            <div class="main-nav-link-wrapper">
+                <a href="./ourteam.html"> Our team </a>
+            </div>
+            <!-- /.main-nav-link-wrapper -->
+
+            <div class="main-nav-link-wrapper">
+                <a href="./careers.html"> Careers </a>
+            </div>
+            <!-- /.main-nav-link-wrapper -->
+
+            <div class="main-nav-link-wrapper">
+                <a href="./contactus.html"> Contact us </a>
+            </div>
+            <!-- /.main-nav-link-wrapper -->
+
+        </div>
+        <!-- /.main-nav-right-part -->
+
+
+    </nav>
+    <!-- /.main-nav -->
+    <div class="mobile-burger-menu">
+        <a href="#" class="close"></a>
+        <div class="mobile-burger-link-wrapper">
+            <a href="./index.html"> CHorse Games </a>
+        </div>
+        <!-- /.mobile-burger-link-wrapper -->
+        <div class="mobile-burger-link-wrapper">
+            <a href="./ourteam.html"> Our team </a>
+        </div>
+        <!-- /.mobile-burger-link-wrapper -->
+        <div class="mobile-burger-link-wrapper">
+            <a href="./careers.html"> Careers </a>
+        </div>
+        <!-- /.mobile-burger-link-wrapper -->
+        <div class="mobile-burger-link-wrapper">
+            <a href="./contactus.html"> Contact us </a>
+        </div>
+        <!-- /.mobile-burger-link-wrapper -->
+    </div>
+    <!-- /.mobile-burger-menu -->
+
+
+    <div class="modal-hidden">
+
+
+    <div class="main-page">
+        <img src="./img/Head.png" alt="" class="main-page-img mobile-hidden">
+        <img src="./img/mobile-head.png" alt="" class="main-page-img desctop-hidden">
+    </div>
+    <!-- /.main-page -->
+
+    <div class="play-next-game-text">
+        TRY IT OUT TODAY
+    </div>
+    <!-- /.play-next-game-text -->
+
+    <div class="play-next-game-wrapper">
+        <div class="play-next-game-left play-game-block">
+
+        </div>
+        <!-- /.play-next-game-left -->
+        <div class="play-next-game-center play-game-block">
+
+        </div>
+        <!-- /.play-next-game-center -->
+        <div class="play-game-block play-next-game-right">
+
+            <div class="badge-gp-wrapper general-stores-wrapper">
+                <a href="">
+                    <img src="./img/google-play-badge.png" alt="" class="googleplay-image">
+                </a>
+            </div>
+            <!-- /.badge-gp-wrapper -->
+
+            <div class="general-stores-wrapper badge-iOs-wrapper">
+
+                <a href="">
+                    <img class="iOS-image" src="./img/apple-store-badge.png">
+                    <!-- /.iOS-image -->
+                </a>
+
+            </div>
+            <!-- /.badge-gp-wrapper -->
+
+
+
+
+        </div>
+        <!-- /.play-next-game-right -->
+    </div>
+    <!-- /.play-next-game-wrapper -->
+
+
+
+    <div class="play-next-game-text text-about-company">
+        ABOUT CHorse Games. Bringing fun to others
+    </div>
+    <!-- /.play-next-game-text -->
+
+
+    <div class="play-next-game-chorse-company-text">
+
+        We’re the original app developer founded in 2021 and located in the UK. <br>
+        We are doing our best at trying to make you feel endless <br>
+        summer and uninterrupted bliss of calm and relaxing gameplays. <br>
+        <span class='italic-text'>Our games are about to be published. Do not miss them! </span>  <br> 
+
+
+
+    </div>
+    <!-- /.play-next-game-chorse-company-text -->
+    
+    <div class="soc-line-wrapper">
+        <div class="soc-img-wrapper" style="margin-right: 10px;">
+            <a href="">
+            <img src="./img/instagram.png" alt="Inst" class="soc-img">
+        </a>
+        </div>
+        <!-- /.soc-img-wrapper -->
+        <div class="soc-img-wrapper">
+            <a href="">
+            <img src="./img/linkedin.png" alt="LinkedIn" class="soc-img">
+        </a>
+        </div>
+        <div class="soc-img-wrapper">
+            <a href="">
+            <img src="./img/facebook.png" alt="Fb" class="soc-img">
+        </a>
+        </div>
+    </div>
+    <!-- /.soc-line-wrapper -->
+</div>
+<!-- /.modal-hidden -->
+   <script>
+    let closeBtn = document.querySelector('.close');
+    let openBtn = document.querySelector('.burger-menu-img-wrapper');
+    let modalWindow = document.querySelector('.mobile-burger-menu');
+    let bodyWrapper = document.querySelector('html');
+    let modalHidden = document.querySelector('.modal-hidden');
+    openBtn.onclick = function() {
+        modalWindow.style.display = 'block';
+        bodyWrapper.style.overflowY = 'hidden';
+        modalHidden.style.display = 'none';
+    };
+    
+    closeBtn.onclick = function() {
+        modalWindow.style.display = 'none';
+        bodyWrapper.style.overflowY = 'initial';
+        modalHidden.style.display = 'block';
+    };
+   </script>
+</body>
+</html>

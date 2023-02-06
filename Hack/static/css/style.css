@@ -1,0 +1,682 @@
+/* font-family: 'PT Sans', sans-serif; */
+/* font-family: 'Rubik', sans-serif; */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: calc(100vw / 80);
+  /* 24px */
+  height: 100vh;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #fbfdfd;
+}
+
+/* navbar */
+.main-page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.208rem;
+  padding-bottom: 1.041rem;
+  background-color: #ffffff;
+  border-bottom: rgba(0, 32, 51, 0.1) 1px solid;
+  color: #002033;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.main-nav-logo-wrapper {
+  padding-left: 2.458rem;
+}
+
+.main-nav-ul {
+  display: flex;
+  align-items: center;
+  padding-left: 6.375rem;
+}
+
+.main-nav-contacts-ul {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-link {
+  line-height: 140%;
+  font-size: 18px;
+  color: #002033;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.main-nav-li:hover .main-nav-link {
+  color: #f55d47;
+  cursor: pointer;
+}
+
+.main-nav-li+.main-nav-li {
+  padding-left: 3.458em;
+}
+
+.main-nav-contacts-li {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.main-nav-contacts-li:hover {
+  color: #f55d47;
+  cursor: pointer;
+}
+
+.main-nav-contacts-li+.main-nav-contacts-li {
+  padding-left: 2.583em;
+  padding-right: 1.75rem;
+}
+
+.main-nav-message-img {
+  margin-top: 0.15em;
+}
+
+/* Первый экран */
+.all-content-wrapper {
+  max-width: 1920px;
+  margin: auto;
+  overflow: visible;
+}
+
+.main-page-text {
+  padding-left: 8.833rem;
+}
+
+.main-page {
+  background-image: url(../img/main-page/home.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 54.3%;
+  padding-bottom: 8rem;
+  background-position: 95.5% 100%;
+}
+
+.main-page-h1 {
+  color: #002033;
+  font-family: "Rubik", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 84px;
+  padding-top: 10rem;
+}
+
+.orange {
+  color: #f55d47;
+}
+
+.main-page-h2 {
+  color: #002033;
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  max-width: 510px;
+  letter-spacing: -0.003rem;
+  margin-bottom: 4.65rem;
+  padding-top: 1.666rem;
+}
+
+.main-page-btn {
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  border-radius: 15px;
+  background-color: #f55d47;
+  border: none;
+  padding: 24px 92px 23px 92px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main-page-btn:hover {
+  background-color: #E84830;
+}
+
+/* Статистика уютного дома */
+.about-part-page {
+  background-color: #f6f8f9;
+  font-family: "Rubik", sans-serif;
+  padding-bottom: 4.541rem;
+}
+
+.what-is-yd {
+  color: #002033;
+  padding-top: 10.4rem;
+  padding-left: 8.833rem;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 84px;
+}
+
+.static-line-about-part-page {
+  display: flex;
+  padding-top: 3.541rem;
+  padding-left: 3.5rem;
+  padding-right: 2rem;
+  justify-content: space-around;
+}
+
+.number-element {
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 108.5px;
+  white-space: nowrap;
+}
+
+.descr-element {
+  padding-top: 1.583rem;
+  color: #002033;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 43.4px;
+}
+
+.special-number-element {
+  color: #f6f8f9;
+  text-shadow: #f55d47 1.7px 1.7px 0, #f55d47 -1.7px -1.7px 0,
+    #f55d47 -1.7px 1.7px 0, #f55d47 1.7px -1.7px 0;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.static-line-element:hover .special-number-element {
+  color: #f55d47;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+/* Новости */
+.news-part-page {
+  background-color: #f6f8f9;
+  padding-bottom: 7.5rem;
+  padding-top: 6rem;
+}
+
+.news-link-wrapper {
+  margin-left: 8.791rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.083rem;
+}
+
+.news-link {
+  font-family: "Rubik", sans-serif;
+  color: #002033;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 84px;
+}
+
+.right-arrow {
+  margin-left: 1.6rem;
+  margin-top: 0.25rem;
+}
+
+.news-cards-grid {
+  display: grid;
+  grid-template-columns: 30.8rem 30.8rem;
+  grid-column-gap: 0.833rem;
+  grid-row-gap: 1.375rem;
+  grid-auto-rows: 649px;
+  justify-content: center;
+  margin-left: 0.9rem;
+}
+
+/* Стили для карточки новостей */
+.news-card-element {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.news-card-element:hover .news-link-text {
+  cursor: pointer;
+}
+
+.card-header {
+  height: 10.791rem;
+}
+
+.news-card-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  top: 12.833rem;
+  left: 2.7rem;
+}
+
+.card-title {
+  max-width: 24.125rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 140%;
+  font-family: "Rubik", sans-serif;
+  color: #002033;
+}
+
+.card-descr {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 135%;
+  color: #002033;
+  opacity: 0.8;
+  max-width: 20.791rem;
+  margin-top: 0.75rem;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: -2.55rem;
+}
+
+.card-footer-date-and-link {
+  display: flex;
+  justify-content: space-between;
+  width: 30.8rem;
+  margin-bottom: 1.1rem;
+}
+
+.card-date {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #002033;
+  opacity: 0.5;
+  padding-right: 2.8rem;
+}
+
+.news-card-link {
+  padding-bottom: 0em;
+  padding-left: 2.8rem;
+  color: #fbfdfd;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  padding-bottom: 2.7rem;
+  display: flex;
+}
+
+.news-link-arrow {
+  margin-top: 0.083rem;
+  margin-left: 0.625rem;
+}
+
+.footer-line-wrapper {
+  text-align: center;
+  padding-bottom: 1.1rem;
+}
+
+.footer-wrapper {
+  max-width: 1920px;
+  margin: auto;
+  overflow: visible;
+  margin-top: 2.7rem;
+}
+
+.black-color-news {
+  color: #002033;
+}
+
+.read-more-news-part-page-link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.65rem;
+  margin-left: 0.875rem;
+  background-color: #f6f8f9;
+}
+
+.read-more-link {
+  font-family: "PT Sans", sans-serif;
+  color: #0085d6;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+}
+
+.read-more-img {
+  margin-left: 0.708rem;
+  margin-top: 0.083rem;
+}
+
+/* Страница отправки резюме */
+.send-resume-part-page {
+  background-color: #ffffff;
+  padding-bottom: 6.3rem;
+  background-position: 600% 100%;
+}
+
+
+.resume-part-page-text-wrapper {
+  margin-left: 8.833rem;
+  padding-top: 6rem;
+}
+
+.resume-part-page-header {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 140%;
+  padding-bottom: 1.791rem;
+  color: #002033;
+}
+
+.resume-part-page-descr {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 145%;
+  margin-bottom: 4.1rem;
+  max-width: 515px;
+}
+
+.send-resume-btn {
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  border-radius: 15px;
+  background-color: #f55d47;
+  border: none;
+  padding: 24px 105px 23px 104px;
+}
+
+/* Футер */
+
+.up-part-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f8f9;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1.458rem;
+  max-width: 1920px;
+  overflow: hidden;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  margin-left: 2.375rem;
+}
+
+.footer-logo-wrapper::after {
+  content: "";
+  display: flex;
+  width: 0.0416rem;
+  height: 6.625rem;
+  background-color: #002033;
+  opacity: 0.1;
+  margin-left: 4.583rem;
+}
+
+.footer-contacts-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -0.416rem;
+  margin-top: 0.333rem;
+}
+
+.footer-contacts-ul::after {
+  content: "";
+  display: flex;
+  width: 0.0416rem;
+  height: 6.625rem;
+  background-color: #002033;
+  opacity: 0.1;
+  margin-left: 5.416rem;
+}
+
+.footer-contacts-li+.footer-contacts-li {
+  margin-left: 7.916rem;
+}
+
+.footer-li-icon-wrapper {
+  margin-bottom: 0.625rem;
+}
+
+.footer-li-text {
+  color: #002033;
+  font-family: "Rubik", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 49px;
+  white-space: nowrap;
+}
+
+.footer-soc-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1.666rem;
+}
+
+.footer-soc-li+.footer-soc-li {
+  margin-left: 1.5rem;
+}
+
+/* Нижняя часть футера */
+.down-part-footer {
+  display: flex;
+
+  padding-top: 3.333rem;
+  padding-bottom: 3.583rem;
+  background-color: #dad9d9;
+  padding-right: 1.875rem;
+  padding-left: 2.5rem;
+  opacity: 0.3;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  justify-content: center;
+}
+
+.footer-links-ul-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links-ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link-li+.footer-link-li {
+  margin-left: 72px;
+}
+
+.footer-link {
+  color: #000000;
+}
+
+/* Скрытия для мобильной версии */
+.main-nav-mobile-contacts-wrapper {
+  display: none;
+}
+
+.mobile-news-img-line {
+  display: none;
+}
+
+.mobile-news-card-descr {
+  display: none;
+}
+
+.mobile-news-card-link-wrapper {
+  display: none;
+}
+
+.mobile-footer-soc-divider {
+  display: none;
+}
+
+.mobile-burger-menu {
+  display: none;
+}
+
+
+.blocker {
+  display: none;
+}
+
+.main-page-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.cacl-content-wrapper {
+  margin-top: 40px;
+}
+
+.input-wrapper+.input-wrapper {
+  margin-top: 15px;
+}
+
+.calc-input {
+  width: 500px;
+  color: #002033;
+  margin-left: 47px;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: "Rubik", sans-serif;
+}
+
+.input-right-part {
+  margin-left: 0px;
+  margin-top: 15px;
+}
+
+
+.calculator-wrapper {
+  margin-bottom: 50px;
+}
+
+.calculator-content-wrapper {
+
+  padding-top: 100px;
+}
+
+.width-wrapper-calc {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.map-all-wrapper-text {
+  color: #002033;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 43.4px;
+  font-family: "Rubik", sans-serif;
+  margin-left: 200px;
+  margin-top: -40px;
+}
+
+.calc-text-wrapper {
+  color: #002033;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 43.4px;
+  font-family: "Rubik", sans-serif;
+  margin-left: 20px;
+  margin-top: -40px;
+}
+
+.map-all-wrapper {}
+
+.map-figure-wrapper {
+  border: 3px solid black;
+  margin-top: 40px;
+  border-radius: 5px;
+  margin-left: 200px;
+}
+
+.calc-btn {
+  margin-top: 50px;
+  margin-left: 47px;
+  cursor: pointer;
+}
+
+.calculator-wrapper {
+  margin-top: 70px;
+}
+
+.yackor-block {
+  position: absolute;
+  top: 830px;
+  font-size: 0px;
+}
+
+@media (max-device-width: 1600px) {
+  body {
+    zoom: 90%;
+  }
+}
+
+@media (max-device-width: 1400px) {
+  body {
+    zoom: 80%;
+  }
+}

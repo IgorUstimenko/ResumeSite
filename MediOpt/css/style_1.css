@@ -1,0 +1,323 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Rubik', sans-serif; */
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.width-wrapper {
+    width: 1290px;
+    margin: auto;
+}
+
+/* Красная полоска */
+.header__red-line {
+    background-color: #ED101D;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.header__width-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__red-line-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    position: absolute;
+    color: #FFFFFF;
+}
+
+
+.header__red-line-close-wrapper {
+    margin-top: 1px;
+}
+
+.header__red-line-close-wrapper img {
+    width: 15.75px;
+    height: 15.75px;
+}
+
+.header__red-line-close-wrapper {
+    margin-right: 3px;
+}
+
+/* Полоска с контактами и городом */
+.header__contacts-line {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #F5F5F5;
+}
+
+.header__contacts-line .width-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__city-wrapper {
+    width: 162px;
+    height: 29px;
+    display: flex;
+    padding: 7px 12px 7px 12px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ED101D;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.header__city-place-icn {
+    width: 15px;
+    height: 15px;
+}
+
+.header__city-place-icn-wrapper {
+    margin-top: 1px;
+}
+
+.header__city-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ED101D;
+}
+
+.header__contacts-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__contacts-element {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #7B7B7B;
+}
+
+.header__contactns-time {
+    color: #1D1D1D;
+}
+
+.header__contacts-element {
+    margin-left: 8px;
+}
+
+.header__contacts-element {
+    margin-top: 3.5px;
+}
+
+.header__contacts-bold {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D1D1D
+}
+
+.header__contacts-phone {
+    margin-left: 25px;
+}
+
+.header__contacts-mail {
+    margin-left: 25px;
+}
+
+.header__contacts-call {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 10px;
+
+}
+
+.header__contacts-call a {
+    color: #ED101D;
+}
+
+.header__links-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__links-element {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.header__links-element a {
+    color: #1F2C43;
+}
+
+
+.header__links-element+.header__links-element {
+    margin-left: 20px;
+}
+
+/* Полоска поиска */
+.header__search-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header__search-line-catalog-and-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+.header__search-line-catalog-wrapper {
+    display: flex;
+    padding-left: 28px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 20px rgba(237, 16, 29, 0.25);
+    border-radius: 8px;
+    background: #ED101D;
+}
+
+.header__search-line-catalog-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.header__catalog-img-wrapper {
+    margin-right: 10px;
+}
+
+.header__catalog-img {
+    height: 11.5px;
+    width: 15.33px;
+}
+
+.header__search-line-wrapper-input {
+    margin-left: 20px;
+    width: 555px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__main-input {
+    background: #F8F8F8;
+    border-radius: 8px;
+    width: 555px;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #AAAAAA;
+    padding: 15px 0px 15px 15px;
+    border: 0px;
+}
+
+::-webkit-input-placeholder {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+::-moz-placeholder {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+.header__search-line-loop-wrapper {
+    position: absolute;
+    right: 15px;
+}
+
+.header__search-line-icns-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__search-line-icns-element-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__search-line-icns-element-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 4px;
+    color: #1F2C43;
+}
+
+.header__search-line-icns-element-wrapper+.header__search-line-icns-element-wrapper {
+    margin-left: 25px;
+}
+
+.header__search-line-icns-divder {
+    height: 34px;
+    width: 1px;
+    background-color: #F0F0F0;
+}
+
+/* Полоска с катеогриями */
+.header__categories-wrapper .width-wrapper {
+    display: flex;
+    position: relative;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.header__categories-element a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(33, 33, 33, 0.5);
+}
+
+.header__categories-element+.header__categories-element {
+    margin-left: 20px;
+}
+
+.header__categories-arrow {
+    width: 27px;
+    height: 27px;
+}
+
+.header__categories-arrow-wrapper {
+    position: absolute;
+    z-index: 2;
+    right: 3.2px;
+    margin-top: 4px;
+}

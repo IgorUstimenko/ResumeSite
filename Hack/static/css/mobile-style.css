@@ -1,0 +1,761 @@
+@media (max-device-width: 1024px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    zoom: 100%;
+  }
+
+  /* navbar */
+  .main-page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.35rem;
+    padding-bottom: 2.1rem;
+  }
+
+  .main-nav-logo-wrapper {
+    padding-left: 3rem;
+  }
+
+  .main-nav-logo {
+    height: 70%;
+    width: 70%;
+  }
+
+  .main-nav-ul {
+    padding-left: 0.3rem;
+    padding-top: 0rem;
+    margin-left: -0rem;
+    margin-right: 0rem;
+  }
+
+  .main-nav-li+.main-nav-li {
+    padding-left: 3.65rem;
+  }
+
+  .main-nav-contacts-li-phone {
+    display: none;
+  }
+
+  .main-nav-contacts-ul {
+    padding-right: 0rem;
+  }
+
+  .main-nav-contacts-li+.main-nav-contacts-li {
+    padding-left: 3.4em;
+    padding-right: 0.3rem;
+  }
+
+  .main-nav-message-img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .main-nav-link {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  /* Первый экран */
+  .main-page {
+    background-image: url(../img/main-page/home.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 71.5%;
+    padding-bottom: 8rem;
+    background-position: 165% 81%;
+  }
+
+  .main-page-text {
+    padding-left: 3.2rem;
+  }
+
+  .main-page-h1 {
+    color: #002033;
+    font-family: "Rubik", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 140%;
+    padding-top: 15.8rem;
+  }
+
+  .main-page-h2 {
+    font-size: 14px;
+    line-height: 140%;
+    max-width: 320px;
+    letter-spacing: -0.003rem;
+    margin-bottom: 9.25rem;
+    padding-top: 2.5rem;
+  }
+
+  .main-page-btn {
+    font-size: 14px;
+    line-height: 140%;
+    border-radius: 11px;
+    background-color: #f55d47;
+    border: none;
+    padding: 17px 70px 18px 69px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  /* Статистика уютного дома */
+
+  .what-is-yd {
+    padding-top: 7rem;
+    padding-left: 3rem;
+    font-size: 35px;
+    line-height: 140%;
+  }
+
+  .static-line-about-part-page {
+    padding-top: 6.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: space-between;
+  }
+
+  .number-element {
+    font-size: 50px;
+    line-height: 108.5%;
+    letter-spacing: 1.3px;
+  }
+
+  .descr-element {
+    padding-top: 2rem;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 108.5%;
+  }
+
+  .special-number-element {
+    text-shadow: #f55d47 1.2px 1.2px 0, #f55d47 -1.2px -1.2px 0,
+      #f55d47 -1.2px 1.2px 0, #f55d47 1.2px -1.2px 0;
+  }
+
+  /* Новости */
+  .news-part-page {
+    padding-bottom: 7.5rem;
+    padding-top: 7.9rem;
+  }
+
+  .news-link-wrapper {
+    margin-left: 3.1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .news-link {
+    font-size: 35px;
+    line-height: 140%;
+  }
+
+  .right-arrow {
+    width: 35%;
+    height: 35%;
+    margin-left: 2rem;
+  }
+
+  /* Стили для карточки новостей */
+
+  .news-cards-grid {
+    display: grid;
+    grid-template-columns: 36.354rem 36.354rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.375rem;
+    grid-auto-rows: 378px;
+    justify-content: center;
+    margin-left: 0rem;
+  }
+
+  .news-card-element {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.05);
+  }
+
+  .card-header {
+    height: 12rem;
+  }
+
+  .card-content {
+    position: absolute;
+    top: 14.4rem;
+    left: 3rem;
+  }
+
+  .card-title {
+    max-width: 30rem;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .card-descr {
+    font-size: 14px;
+    line-height: 145%;
+    max-width: 30rem;
+    margin-top: 1.3rem;
+  }
+
+  .card-footer {
+    position: absolute;
+    bottom: 1.3rem;
+  }
+
+  .footer-line-wrapper {
+    text-align: center;
+    padding-bottom: 1.45rem;
+    width: 36.35rem;
+    margin-right: 0rem;
+  }
+
+  .card-date {
+    font-size: 14px;
+    line-height: 140%;
+    padding-left: 2rem;
+    padding-right: 0rem;
+    margin-right: -2.2rem;
+    white-space: nowrap;
+  }
+
+  .news-card-link {
+    padding-bottom: 0em;
+    padding-left: 3.1rem;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .news-link-arrow {
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+
+  .news-link-arrow img {
+    width: 42%;
+  }
+
+  .read-more-news-part-page-link-wrapper {
+    margin-top: 3.15rem;
+    margin-left: 2.6rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .read-more-text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .read-more-img {
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+
+  .read-more-img img {
+    width: 50%;
+  }
+
+  /* Отправка резюме */
+  .send-resume-part-page {
+    background-size: 150%;
+    background-position: 62% 100%;
+  }
+
+  .resume-part-page-text-wrapper {
+    margin-left: 3rem;
+    padding-top: 9rem;
+  }
+
+  .resume-part-page-header {
+    font-size: 35px;
+    line-height: 143%;
+    padding-bottom: 2.3rem;
+  }
+
+  .resume-part-page-descr {
+    font-size: 14px;
+    line-height: 140%;
+    max-width: 32rem;
+    margin-bottom: 5.2rem;
+  }
+
+  .send-resume-btn {
+    padding: 17px 79px 18px 78px;
+    font-size: 14px;
+    line-height: 140%;
+    border-radius: 11px;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-device-width: 450px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    zoom: 100%;
+  }
+
+  .main-nav-ul {
+    display: none;
+  }
+
+  .main-nav-contacts-wrapper {
+    display: none;
+  }
+
+  .main-page-nav {
+    padding-top: 2.8rem;
+    padding-bottom: 3rem;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-nav-mobile-contacts-wrapper {
+    display: flex;
+  }
+
+  .main-nav-logo-wrapper {
+    margin-left: 0rem;
+  }
+
+  .main-nav-logo {
+    width: 120px;
+    height: 35.3px;
+  }
+
+  .main-nav-message-img {
+    width: 58px;
+    height: 41.52px;
+  }
+
+  .main-nav-mobile-burger {
+    width: 29px;
+    height: 11px;
+    margin-top: 3.8rem;
+  }
+
+  .main-mobile-nav-contacts-ul {
+    display: flex;
+    /* align-items: center; */
+    margin-right: 4.2rem;
+  }
+
+  .main-mobile-nav-contacts-li+.main-mobile-nav-contacts-li {
+    margin-left: 6rem;
+  }
+
+  .active-link {
+    color: #f55d47 !important;
+  }
+
+  /* Основная страница */
+  .main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: 311px 241px;
+    background-position: 50% 70%;
+    padding-bottom: 9rem;
+  }
+
+  .main-page-h1 {
+    font-size: 30px;
+    line-height: 140%;
+    padding-top: 0rem;
+    margin-top: 23.5rem;
+  }
+
+  .main-page-h2 {
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 311px;
+    font-weight: normal;
+    margin-top: 2rem;
+  }
+
+  .main-page-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    margin-top: 63rem;
+    padding: 19px 91px 20px 90px;
+  }
+
+  .main-page-text {
+    padding-left: 0rem;
+    margin: 0 auto;
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
+
+  /* Что такое уютный дом */
+  .about-part-page {
+    text-align: center;
+  }
+
+  .what-is-yd {
+    font-size: 24px;
+    padding-left: 0px;
+    padding-top: 25.5rem;
+  }
+
+  .static-line-about-part-page {
+    display: block;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 18rem;
+  }
+
+  .number-element {
+    font-size: 50px;
+    line-height: 108.5%;
+    letter-spacing: 0.03em;
+  }
+
+  .descr-element {
+    font-size: 20px;
+    padding-top: 3rem;
+    line-height: 108.5%;
+  }
+
+  .special-number-element {
+    text-shadow: #f55d47 1.3px 1.3px 0, #f55d47 -1.3px -1.3px 0,
+      #f55d47 -1.3px 1.3px 0, #f55d47 1.3px -1.3px 0;
+  }
+
+  .static-line-element+.static-line-element {
+    margin-top: 18.3rem;
+  }
+
+  /* Отдел новостей */
+  .news-part-page {
+    background-color: #f6f8f9;
+    padding-bottom: 2.8rem;
+    padding-top: 21.35rem;
+  }
+
+  .news-link-wrapper {
+    margin-left: 4.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.083rem;
+  }
+
+  .news-link {
+    font-family: "Rubik", sans-serif;
+    color: #002033;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .right-arrow {
+    margin-left: 3.2rem;
+    margin-top: 0.25rem;
+    width: 11px;
+    height: 17px;
+  }
+
+  .news-cards-grid {
+    display: grid;
+    grid-template-columns: 331px;
+    grid-column-gap: 0.833rem;
+    grid-row-gap: 4rem;
+    grid-auto-rows: 378px;
+    justify-content: center;
+    margin-left: 0.9rem;
+    margin-top: 4rem;
+  }
+
+  .news-card {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-header {
+    height: 25rem;
+  }
+
+  .card-content {
+    position: absolute;
+    top: 30rem;
+    left: 6rem;
+  }
+
+  .card-title {
+    max-width: 60rem;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .card-descr {
+    font-size: 14px;
+    line-height: 145%;
+    color: #002033;
+    opacity: 0.8;
+    max-width: 60rem;
+    margin-top: 2.5rem;
+  }
+
+  .card-footer {
+    bottom: 2.7rem;
+  }
+
+  .card-footer-date-and-link {
+    width: 60rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .news-card-link {
+    padding-left: 6.5rem;
+  }
+
+  .card-date {
+    font-size: 14px;
+    line-height: 140%;
+    padding-right: 0rem;
+  }
+
+  .footer-line-wrapper {
+    text-align: center;
+    margin-bottom: 2.9rem;
+  }
+
+  .footer-line {
+    width: 330px;
+  }
+
+  .read-more-news-part-page-link-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8.8rem;
+    margin-left: 4.3rem;
+    background-color: #f6f8f9;
+    padding-bottom: 11.3rem;
+  }
+
+  .read-more-link {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .read-more-img {
+    margin-top: -0.2rem;
+    margin-left: 1.8rem;
+  }
+
+  .mobile-read-more-arrow {
+    width: 4rem;
+  }
+
+  /* Страница отправки резюме */
+
+  .send-resume-part-page {
+
+    padding-bottom: 6.25rem;
+    background-color: #ffffff;
+  }
+
+  .resume-part-page-text-wrapper {
+    margin-left: 4.9em;
+    padding-top: 14.7rem;
+  }
+
+  .resume-part-page-header {
+    font-size: 24px;
+    line-height: 145%;
+    padding-bottom: 4.4rem;
+  }
+
+  .resume-part-page-descr {
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 285px;
+  }
+
+  .send-resume-btn {
+    font-size: 14px;
+    line-height: 140%;
+    white-space: nowrap;
+    padding: 19px 100px 20px 99px;
+    margin-top: 88rem;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+  }
+
+
+  /* Модалка */
+
+  .mobile-burger-menu .modal {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  #burger {
+    background-color: white;
+    z-index: 101;
+    padding: 0px;
+    border-radius: 0px !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .blocker {
+    display: block;
+    z-index: 101 !important;
+    padding: 0px !important;
+    border-radius: 0px !important;
+
+
+  }
+
+  .mobile-close-burger-menu {
+    height: 20px;
+    width: 20px;
+    margin-top: 2.9rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .mobile-burger-menu-li-link {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    color: #002033;
+  }
+
+  .mobile-burger-menu-ul {
+    text-align: center;
+    margin-top: 30em;
+  }
+
+  .mobile-burger-menu-li+.mobile-burger-menu-li {
+    margin-top: 11.7rem;
+  }
+
+  /* Футер */
+  .footer-mobile-burger-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23.5rem;
+    padding-left: 4.5rem;
+    padding-right: 4.7rem;
+  }
+
+  .burger-menu-footer-element+.burger-menu-footer-element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .burger-menu-footer-text {
+    font-size: 14px;
+    line-height: 140%;
+    color: #002033;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 1.4rem;
+  }
+
+
+  .burger-menu-footer-text-email {
+    margin-top: 3rem;
+  }
+
+
+  .soc-footer-mobile-burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9rem;
+    background-color: white;
+    padding-bottom: 6rem;
+  }
+
+  .soc-footer-mobile-burger-menu-img-wrapper+.soc-footer-mobile-burger-menu-img-wrapper {
+    margin-left: 43px;
+  }
+
+  .soc-footer-mobile-burger-menu-img-icn {
+    width: 11.3rem;
+    height: 11.3rem;
+  }
+
+  .what-is-yd {
+    padding-top: 17rem;
+  }
+
+  .calc-text-wrapper {
+    color: #002033;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 43.4px;
+    font-family: "Rubik", sans-serif;
+    margin-left: 25px;
+    white-space: nowrap;
+    margin-top: -40px;
+  }
+
+  .calc-input {
+    width: 300px;
+    color: #002033;
+    margin-left: 25px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .calc-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    margin-top: 20rem;
+    padding: 19px 91px 20px 90px;
+    white-space: nowrap;
+    margin-left: 25px;
+    margin-bottom: 70px;
+  }
+
+  .our-services-part-page {
+    display: none;
+  }
+
+  .calculator-content-wrapper {
+    padding-top: 50px;
+  }
+
+  .count-text {
+    font-size: 20px;
+    max-width: 250px;
+    margin-left: 15px;
+  }
+
+  .count-value {
+    font-size: 22px;
+    margin-left: 30px;
+  }
+
+  .modal-text-block {
+    font-size: 18px;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .yackor-block {
+
+    top: 700px;
+
+  }
+
+}

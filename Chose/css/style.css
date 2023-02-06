@@ -1,0 +1,140 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    
+}
+html {
+    overflow-x: hidden;
+ 
+}
+.main-nav {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 35px;
+}
+.main-nav-right-part {
+    display: flex;
+}
+.main-nav-link-wrapper + .main-nav-link-wrapper {
+    margin-left: 50px;
+}
+.main-nav-link-wrapper a {
+    font-family: 'PT Sans', sans-serif;
+}
+.main-nav-logo
+{
+    width: 120px;
+}
+.main-nav-link-wrapper a {
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+}
+.main-page {
+    max-width: 1000px;
+    margin: auto;
+}
+.main-page img{
+    width: 1000px;
+}
+.play-next-game-wrapper {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+}
+
+.play-next-game-text {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 60px;
+    font-weight: 600;
+}
+
+.play-next-game-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.play-game-block
+{
+    margin-top: 50px;
+    background-color: rgb(211, 194, 194);
+    height: 300px;
+    width: 280px;
+}
+
+.general-stores-wrapper
+{
+
+}
+.badge-gp-wrapper
+{
+margin-left: -15px;
+
+
+}
+
+.iOS-image
+{
+    width: 200px;
+}
+
+.googleplay-image
+{
+    width: 225px;
+}
+.play-next-game-right
+{
+    margin-top: 100px;
+    background-color: transparent;
+}
+
+.text-about-company
+{
+    margin-top: 30px;
+}
+
+.play-next-game-chorse-company-text
+{
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.soc-img {
+    width: 90px;
+}
+.soc-line-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+.soc-img-wrapper + .soc-img-wrapper {
+    margin-left: 40px;
+}
+.mobile-burger-menu {
+    display: none;
+}
+.burger-menu-img-wrapper {
+    display: none;
+}
+.desctop-hidden {
+    display: none;
+}
+.play-next-game-chorse-company-text {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 25px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DstuEducate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <nav class="main-nav">
+    <div class="width-wrapper">
+      <div class="nav-content-wrapper">
+        <div class="logo-wrapper">
+          <a href="./index.html"> E-DSTU </a>
+        </div>
+        <!-- /.logo-wrapper -->
+        <div class="nav-links-wrapper">
+          <div class="nav-link">
+            <a href="index.html"> Главная </a>
+          </div>
+          <div class="nav-link">
+            <a href="test.html"> Проверка знаний </a>
+          </div>
+          <div class="nav-link">
+            <a href="./cursers.html">
+              Рекомендуемые курсы
+            </a>
+          </div>
+          <div class="nav-link">
+            <a href="profile.html"> Ваш профиль </a>
+          </div>
+        </div>
+        <!-- /.nav-links-wrapper -->
+      </div>
+      <!-- /.nav-content-wrapper -->
+    </div>
+    <!-- /.width-wrapper -->
+  </nav>
+
+  <div class="main-page-wrapper">
+    <div class="text-block-wrapper">
+      <h1 class="text-block__h1">Иванов Иван</h1>
+      <div class="text-block-profile">
+        В данном разделе отображены ваши навыки по трём направлениям.
+        Показатели в графах основаны на результатах вашего тестирования
+      </div>
+      <div class="text-info-wrapper">
+        Также вы можете ознакомиться с рекомендуемыми курсами для развития
+        навыков, которые вам необходимы.
+      </div>
+      <a href="cursers.html">
+        <div class="lets-go-test-btn">Ознакомиться с курсами</div>
+      </a>
+    </div>
+    <!-- /.text-block-wrapper -->
+    <div class="graphs-wrapper">
+      <div class="graph-wrapper">
+        <div class="graph-name">JavaScript (<span class="score-js-block">0</span>/10)</div>
+        <div class="graph-line-wrapper">
+          <div class="graph-line graph-line1"></div>
+        </div>
+      </div>
+      <div class="graph-wrapper">
+        <div class="graph-name">CSS (<span class="score-css-block">0</span>/10)</div>
+        <div class="graph-line-wrapper">
+          <div class="graph-line graph-line2"></div>
+        </div>
+      </div>
+      <div class="graph-wrapper">
+        <div class="graph-name">HTML (<span class="score-block">0</span>/20)</div>
+        <div class="graph-line-wrapper">
+          <div class="graph-line graph-line3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.main-page-wrapper -->
+
+  <script src="./scripts/script.js"></script>
+  <script>
+    let ourNameBlock = document.querySelector('.text-block__h1');
+    if (localStorage.getItem("name") != null) {
+      ourNameBlock.textContent = localStorage.getItem("name");
+    }
+    if (localStorage.getItem("html-test") != null) {
+      let htmlWidth = Number(localStorage.getItem("html-test")) * 5 + "%";
+      htmlLine.style.width = htmlWidth;
+
+      let scoreBlock = document.querySelector(".score-block");
+      scoreBlock.textContent = localStorage.getItem("html-test");
+
+    }
+
+    if (localStorage.getItem("css-test") != null) {
+      let cssWidth = Number(localStorage.getItem("css-test")) * 10 + "%";
+      cssLine.style.width = cssWidth;
+      console.log(1);
+      let scoreBlock = document.querySelector(".score-css-block");
+      scoreBlock.textContent = localStorage.getItem("css-test");
+
+    }
+
+    if (localStorage.getItem("js-test") != null) {
+      let jsWidth = Number(localStorage.getItem("js-test")) * 10 + "%";
+      jsLine.style.width = jsWidth;
+      let scoreBlock = document.querySelector(".score-js-block");
+      scoreBlock.textContent = localStorage.getItem("js-test");
+
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="all-content-wrapper">
+        <div class="column-grid">
+            <!-- Модалка нового таска -->
+
+            <div id="ex1" class="modal">
+                <div class="inputs-wrapper">
+
+                    <div class="left-side-inputs">
+                        <div class="input-wrapper">
+                            <div class="input-text">
+                                Название задания
+                            </div>
+                            <!-- /.input-text -->
+                            <input type="text" class="task-input task-name-input" id="task-name-input"
+                                placeholder="Введите название таска" value="">
+                        </div>
+                        <!-- /.input-wrapper -->
+                        <div class="textarea-wrapper">
+                            <div class="input-text">
+                                Описание задания
+                            </div>
+                            <!-- /.input-text -->
+                            <textarea id="task-text-input" class="task-text-area"
+                                placeholder="Введите сам текст таска"></textarea>
+                        </div>
+                        <!-- /.textarea-wrapper -->
+                    </div>
+                    <!-- /.left-side-inputs -->
+                    <div class="right-side-inputs">
+                        <div class="date-wrapper">
+                            <div class="data-text">
+                                Когда нужно выполнить?
+                            </div>
+                            <!-- /.data-text -->
+                            <div class="data-input-wrapper">
+                                <input type="text" id="datepicker" value='' class="data-input">
+                            </div>
+                            <!-- /.data-input-wrapper -->
+                        </div>
+                        <!-- /.date-wrapper -->
+                    </div>
+                    <!-- /.right-side-inputs -->
+                </div>
+                <!-- /.inputs-wrapper -->
+                <div class="btns-wrapper">
+                    <div class="save-btn" id="saveBtn">
+                        Сохранить
+                    </div>
+                    <!-- /.save-btn -->
+                    <a href="#close" rel="modal:close">
+                        <div class="cancel-btn" id="cancelBtn">
+                            Отменить
+                        </div>
+                        <!-- /.cancel-btn -->
+                    </a>
+
+                </div>
+                <!-- /.btns-wrapper -->
+            </div>
+            <!-- Модалка нового таска -->
+
+            <!-- Модалка редактирования -->
+            <div id="RedactModal" class="modal">
+                <div class="inputs-wrapper">
+                    <div class="left-side-inputs">
+                        <div class="input-wrapper">
+                            <input type="text" class="task-input task-name-input" id="redact-task-name-input"
+                                placeholder="Введите название таска" value="">
+                        </div>
+                        <!-- /.input-wrapper -->
+                        <div class="textarea-wrapper">
+                            <textarea id="redact-task-text-input" class="task-text-area"
+                                placeholder="Введите сам текст таска"></textarea>
+                        </div>
+                        <!-- /.textarea-wrapper -->
+                    </div>
+                    <!-- /.left-side-inputs -->
+                    <div class="right-side-inputs">
+                        <div class="date-wrapper">
+                            <div class="data-text">
+                                Когда нужно выполнить?
+                            </div>
+                            <!-- /.data-text -->
+                            <div class="data-input-wrapper">
+                                <input type="text" id="redactDatepicker" value='' class="data-input">
+                            </div>
+                            <!-- /.data-input-wrapper -->
+                        </div>
+                        <!-- /.date-wrapper -->
+                        <div class="replace-box-wrapper">
+                            <div class="replace-box-header">
+                                В каком списке:
+                            </div>
+                            <!-- /.replace-box-header -->
+                            <div class="replace-box">
+                                <div class="chackbox-wrapper">
+                                    <input type="radio" id="toDoCheckBox" name="check" class="check-box-input">
+                                    <label for="toDo">To-do</label>
+                                </div>
+                                <div class="chackbox-wrapper">
+                                    <input type="radio" id="doTodayCheckBox" name="check" class="check-box-input">
+                                    <label for="doToday">Do today</label>
+                                </div>
+                                <div class="chackbox-wrapper">
+                                    <input type="radio" id="inProgressCheckBox" name="check" class="check-box-input">
+                                    <label for="inProgress">In progress</label>
+                                </div>
+                                <div class="chackbox-wrapper">
+                                    <input type="radio" id="doneCheckBox" name="check" class="check-box-input">
+                                    <label for="done">Done</label>
+                                </div>
+                            </div>
+                            <!-- /.replace-box -->
+                            <div class="delete-btn" id='redacDeleteBtn'>
+                                Удалить
+                            </div>
+                            <!-- /.delete-btn -->
+
+                        </div>
+                        <!-- /.replace-box-wrapper -->
+                    </div>
+                    <!-- /.right-side-inputs -->
+                </div>
+                <!-- /.inputs-wrapper -->
+                <div class="btns-wrapper">
+                    <div class="save-btn" id="redactSaveBtn">
+                        Сохранить
+                    </div>
+                    <!-- /.save-btn -->
+                    <a href="#close" rel="modal:close">
+                        <div class="cancel-btn" id="cancelBtn">
+                            Отменить
+                        </div>
+                        <!-- /.cancel-btn -->
+                    </a>
+                </div>
+                <!-- /.btns-wrapper -->
+            </div>
+            <!-- Модалка редактирования -->
+
+
+
+            <div class="column to-do-column">
+                <div class="column-header to-do-column-header">
+                    <div class="column-header-text">
+                        To-do
+                    </div>
+                    <!-- /.column-header-text -->
+                    <div class="column-header-plus-wrapper" id="to-do-plus">
+                        <img src="./img/plus.svg" alt="" class="column-header-img">
+                    </div>
+                    <!-- /.column-header-plus-wrapper -->
+                </div>
+                <!-- /.column-header -->
+                <div class="column-tasks-wrapper to-do-column-tasks-wrapper" id="to-do-column-tasks-wrapper">
+
+                </div>
+                <!-- /.column-tasks-wrapper -->
+
+            </div>
+            <!-- /.to-do-column -->
+            <div class="column do-today-column">
+                <div class="column-header do-today-column-header">
+                    <div class="column-header-text">
+                        Do today
+                    </div>
+                    <!-- /.column-header-text -->
+                    <div class="column-header-plus-wrapper" id='do-today-plus'>
+                        <img src="./img/plus.svg" alt="" class="column-header-img">
+                    </div>
+                    <!-- /.column-header-plus-wrapper -->
+                </div>
+                <!-- /.column-header -->
+                <div class="column-tasks-wrapper do-today-column-tasks-wrapper" id='do-today-column-tasks-wrapper'>
+
+
+                </div>
+                <!-- /.column-tasks-wrapper -->
+            </div>
+            <!-- /.do-today-column -->
+
+
+            <div class="column in-progress-column">
+                <div class="column-header in-progress-column-header">
+                    <div class="column-header-text">
+                        In progress
+                    </div>
+                    <!-- /.column-header-text -->
+                    <div class="column-header-plus-wrapper" id="in-progress-plus">
+                        <img src="./img/plus.svg" alt="" class="column-header-img">
+                    </div>
+                    <!-- /.column-header-plus-wrapper -->
+                </div>
+                <!-- /.column-header -->
+                <div class="column-tasks-wrapper in-progress-column-tasks-wrapper"
+                    id="in-progress-column-tasks-wrapper">
+
+
+
+
+                </div>
+                <!-- /.column-tasks-wrapper -->
+            </div>
+            <!-- /.in-progress-column -->
+            <div class="column done-column">
+                <div class="column-header done-column-header">
+                    <div class="column-header-text">
+                        Done
+                    </div>
+                    <!-- /.column-header-text -->
+                    <div class="column-header-plus-wrapper" id="done-plus">
+                        <img src="./img/plus.svg" alt="" class="column-header-img">
+                    </div>
+                    <!-- /.column-header-plus-wrapper -->
+                </div>
+                <!-- /.column-header -->
+                <div class="column-tasks-wrapper done-column-tasks-wrapper" id='done-column-tasks-wrapper'>
+
+                </div>
+                <!-- /.column-tasks-wrapper -->
+
+
+            </div>
+            <!-- /.done-column -->
+
+
+
+
+
+        </div>
+        <!-- /.column-grid -->
+    </div>
+    <!-- /.all-content-wrapper -->
+
+    <script>
+
+    </script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

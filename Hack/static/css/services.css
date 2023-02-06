@@ -1,0 +1,280 @@
+.first-part-services-page {
+    padding-top: 0rem;
+    padding-bottom: 3.6rem;
+}
+
+.first-part-services-header {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 140%;
+    color: #002033;
+    padding-top: 9rem;
+    letter-spacing: -0.02rem;
+}
+
+.first-part-services-descr {
+    font-size: 24px;
+    line-height: 140%;
+    font-family: "PT Sans", sans-serif;
+    color: #002033;
+    max-width: 590px;
+    margin-top: 1.7rem;
+    margin-bottom: 4.7rem;
+}
+
+.first-part-services-btn {
+    margin-bottom: 7.6rem;
+}
+
+.scroll-down-first-part-services-wrapper {
+    text-align: center;
+    width: 6.5rem;
+    margin-left: -0.1rem;
+}
+
+.scroll-down-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #0085d6;
+    font-family: "Rubik", sans-serif;
+    white-space: nowrap;
+    margin-top: 0.3rem;
+}
+
+/* Блоки услуг */
+.our-services-part-page {
+    padding-top: 5rem;
+    padding-left: 8rem;
+}
+
+.service-block {
+    display: flex;
+    margin-bottom: 6.1rem;
+}
+
+.service-block-text-wrapper {
+    margin-left: 3.5rem;
+    margin-top: 2.5rem;
+}
+
+.service-block-text-header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 140%;
+    font-family: 'Rubik', sans-serif;
+    color: #002033;
+    letter-spacing: -0.004rem;
+}
+
+.service-block-text-descr {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    font-family: 'PT Sans', sans-serif;
+    color: #002033;
+    margin-top: 1.2rem;
+}
+
+.left-service-block-text-wrapper {
+    margin-left: 0.8rem;
+    margin-top: 1.2rem;
+    margin-right: 4.2rem;
+}
+
+.second-service-block {
+    margin-bottom: 6.2rem;
+}
+
+/* Документы */
+
+.docs-part-page {
+    margin-left: 8.83rem;
+    margin-right: 8rem;
+    margin-top: 9.01rem;
+}
+
+.docs-part-page-header {
+    color: #002033;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 140%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.info-page-right-side-docs-ul {
+    margin-top: 1.9rem;
+    margin-bottom: 3.3rem;
+}
+
+.info-page-right-side-docs-li {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+.info-page-right-side-docs-li-img-wrapper {
+    margin-left: 1.85rem;
+}
+
+.info-page-right-side-docs-li-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #002033;
+    margin-left: 2rem;
+}
+
+.calc-main-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 140%;
+    color: #002033;
+    text-align: center;
+}
+
+.border-bottom-li {
+    border-bottom: 1px #dde2e5 solid;
+}
+
+.calc-wrapper {
+    padding-top: 200px;
+    margin-bottom: 400px;
+}
+
+.calc-content-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    height: 700px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.calc-input {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(15, 15, 15);
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    color: #002033;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    width: 400px;
+    border-radius: 5px;
+
+}
+
+.calc-input+.calc-input {
+    margin-top: 40px;
+}
+
+.width-wrapper-calc {
+    position: relative;
+}
+
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    position: absolute;
+    top: -50px;
+    display: none;
+}
+
+.modal-wrapper-close {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-right: 50px;
+    font-size: 35px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.calc-results-wrapper {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.count-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.count-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140%;
+
+    color: black;
+
+}
+
+.count-value {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140%;
+    color: black;
+    font-weight: 600;
+    margin-left: 10px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.count-wrapper+.count-wrapper {
+    margin-top: 10px;
+}
+
+.count-wrapper+.count-wrapper {
+    margin-top: 30px;
+}
+
+.modal-text-block {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    color: black;
+    margin-top: 50px;
+
+}
+
+.count-value {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140%;
+    color: black;
+    font-weight: 600;
+    margin-left: 10px;
+    border-bottom: 2px solid black;
+    padding-bottom: 0px;
+    margin-top: -4px;
+}

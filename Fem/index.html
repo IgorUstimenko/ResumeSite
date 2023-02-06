@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feminitives</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="main-logo-wrapper desctop-show">
+            <img src="./img/main-logo.svg" alt="Feminitives" class="main-logo">
+        </div>
+        <div class="main-logo-wrapper desctop-hidden">
+            <img src="./img/mobile-decor.svg" alt="Feminitives" class="main-logo">
+        </div>
+        <div class="decor-img-wrapper">
+            <div class="left-decor-img-wrapper">
+                <img src="./img/left-decor.svg" alt="Left img" class="left-decor-img">
+            </div>
+            <div class="right-decor-img-wrapper">
+                <img src="./img/right-decor.svg" alt="Left img" class="left-decor-img">
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="input-and-btn-wrapper">
+                <input type="text" class="fem-input" placeholder="Введите слово" id="definition-word" autofocus>
+                <div class="fem-btn" id="definition-convert">
+                    Феменизируй
+                </div>
+            </div>
+
+            <div class="non-active-block">
+                <div class="try-text desctop-show ">
+                    Попробуй: <a href="javascript:tr('автор');" class="click-first click-word">автор</a>, <a
+                        href="javascript:tr('врач');" class="click-second click-word">врач</a>
+                </div>
+                <div class="fem-desc-text">
+                    Феминитивы – это слова женского рода, альтернативные или парные аналогичным понятиям мужского рода,
+                    относящимся ко всем людям независимо от их пола.
+                    <span class="down-descr">
+                        При помощи этой небольшой программы, реализующей феминистическую логику, вы сами можете создать
+                        феминитивы к любому слову.</span>
+                </div>
+                <div class="try-text desctop-hidden ">
+                    Попробуй: <a href="javascript:tr('автор');" class="click-first-mobile click-word">автор</a>, <a
+                        href="javascript:tr('врач');" class="click-second-mobile click-word">врач</a>
+                </div>
+            </div>
+
+            <div class="active-block">
+                <div class="fem-blocks-wrappper">
+
+                </div>
+
+                <div class="if-we-have-no-fem-text">
+
+                </div>
+                <div class="fem-defenition-text">
+
+                </div>
+
+                <div class="who-i-am-block" id="capture">
+                    Я - <span class="who-i">Дизайнерка</span>
+                    <div class="site-link">
+                        <a href="">
+                            feminizator.ru
+                        </a>
+                    </div>
+                </div>
+
+                <div class="download-and-repost-block">
+                    <div class="repost-wrappper">
+                        <img src="./img/repost-img.png" alt="Repost" class="repost-img">
+                        поделиться
+                    </div>
+                    <div class="download-wrapper" id="fem-btn">
+                        <img src="./img/download-img.png" alt="Donwload" class="download-img">
+                        скачать
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <footer class="main-footer">
+        © 2021 copyright
+    </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/g/filesaver.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fem-btn').click(function () {
+                domtoimage.toBlob(document.getElementById('capture')).then(function (blob) {
+                    window.saveAs(blob, "fem.png");
+                })
+
+            })
+        });
+    </script>
+    <script src="./js/feminitives-rules.js"></script>
+    <script src="./js/feminitives-functions.js"></script>
+    <script>
+        init('definition');
+    </script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

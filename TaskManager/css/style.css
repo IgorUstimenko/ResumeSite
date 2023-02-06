@@ -1,0 +1,256 @@
+body {
+  height: 100vh;
+}
+
+.column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  height: 100%;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.column {
+  border: 0.3px solid #d7d7d7;
+  min-height: 93vh;
+}
+.column-header {
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  color: #17394d;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 0.5px solid #d7d7d7;
+  color: #17394d;
+  background-color: #eeeeee;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.column-header-text {
+  margin-left: 7vw;
+}
+.column-header-img {
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+}
+
+.column-task-wrapper {
+  border: 1px #4a99ff;
+  background-color: #c3ddff;
+  /* width: 87%; */
+  margin: auto;
+  /* margin-top: 15px;
+  padding: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 15px; */
+  margin-bottom: 17px;
+  border: 1px solid #d7d7d7;
+  border-right: 0px;
+  border-left: 0px;
+}
+/* .column-tasks-wrapper {
+
+} */
+.green-column-task-wrapper {
+  background-color: #dcffc2;
+}
+
+.column-task-wrapper-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #222;
+  font-size: 15px;
+  line-height: 17px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.modal {
+  max-width: 1200px !important;
+  width: 800px !important;
+  height: 700px !important;
+}
+
+.inputs-wrapper {
+  display: flex;
+  padding-top: 55px;
+}
+.input-wrapper {
+  margin-bottom: 15px;
+}
+
+.save-btn {
+  background-color: #c2f899;
+  text-align: center;
+  padding: 15px;
+  max-width: 150px;
+  font-size: 25px;
+  margin-top: 30px;
+  color: black;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.column-task-wrapper-name {
+  color: black;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 5px;
+}
+
+.task-text-area {
+  resize: none;
+  width: 390px;
+  height: 330px;
+  color: #222;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  padding: 15px;
+  background-color: rgb(235, 234, 234);
+  font-weight: 500;
+  padding-top: 10px;
+  border-width: 1.5px;
+  border-radius: 6px;
+}
+
+.data-text {
+  font-size: 20px !important;
+  color: #222;
+  margin-bottom: 9px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.data-input {
+  padding: 13px;
+  text-align: center;
+  width: 80px !important;
+  background-color: rgb(235, 234, 234);
+  font-size: 15px;
+  font-weight: 700;
+  border-width: 1.5px;
+  border-radius: 6px;
+  margin-top: 4px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.task-input {
+  width: 400px;
+  padding: 13px;
+  background-color: rgb(235, 234, 234);
+  font-size: 25px;
+  border-width: 1.5px;
+  border-radius: 6px;
+}
+
+.right-side-inputs {
+  margin-left: 63px;
+  margin-top: -30px;
+}
+.column-task-header {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 3px;
+}
+.column-task-wrapper-date {
+  color: #222;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.btns-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cancel-btn {
+  background-color: #ffcebb;
+  text-align: center;
+  padding: 15px;
+  max-width: 150px;
+  font-size: 25px;
+  margin-top: 30px;
+  color: black;
+  margin-left: 30px;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.green-bg {
+  background-color: #c2f899;
+}
+
+.orange-bg {
+  background-color: #ffc079;
+}
+
+.red-bg {
+  background-color: rgb(255, 148, 134);
+}
+
+.replace-box-wrapper {
+  margin-top: 70px;
+}
+.replace-box-header {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.chackbox-wrapper label {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.replace-box {
+  margin-top: 14px;
+}
+.check-box-input {
+  width: 15px;
+  height: 15px;
+}
+.chackbox-wrapper {
+  margin-left: -5px;
+  margin-bottom: 3px;
+}
+
+.delete-btn {
+  padding: 10px;
+  background-color: rgb(255, 97, 97);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.column-header-plus-wrapper {
+  cursor: pointer;
+}
+
+.blue-bg {
+  background-color: #c3ddff;
+}
+
+.input-text {
+  font-size: 20px;
+  margin-bottom: 9px;
+  margin-left: 3px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.date-wrapper {
+  margin-top: 27px;
+}

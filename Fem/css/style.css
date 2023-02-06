@@ -1,0 +1,386 @@
+body {
+    background: #E9E5E0;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 96vh;
+}
+
+.main-wrapper {
+    position: relative;
+}
+
+
+.main-logo-wrapper {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.main-logo-wrapper img {
+    width: 100vw;
+}
+
+.decor-img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: absolute;
+    z-index: -2;
+}
+
+.left-decor-img-wrapper {
+    margin-top: 80px;
+}
+
+.right-decor-img-wrapper {
+    margin-top: -170px;
+}
+
+.main-footer {
+    border-top: 1px solid #566F54;
+    text-align: center;
+    padding-bottom: 16px;
+    padding-top: 10px;
+    font-family: 'Cormorant', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 107.1%;
+    text-align: center;
+    color: #6E6254;
+    width: 100vw;
+    margin-top: 60px;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+/* .main-content-wrapper {
+    max-width: 604px;
+    margin: auto;
+} */
+.main-content-wrapper {
+    max-width: 605px;
+    margin: auto;
+}
+
+.input-and-btn-wrapper {
+    display: flex;
+    margin-top: 139px;
+    justify-content: center;
+}
+
+.fem-input {
+    background: #F9F7F5;
+    border: 0.5px solid #566F54;
+    box-sizing: border-box;
+    width: 394px;
+    padding-left: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    font-family: 'Cormorant', serif;
+    color: #6E6254;
+    height: 50px;
+}
+
+.fem-input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    font-family: 'Cormorant', serif;
+    color: #6E6254;
+    opacity: 0.7;
+}
+
+.fem-btn {
+    width: 196px;
+    background: #698167;
+    text-align: center;
+    padding-top: 11px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 107.1%;
+    font-family: 'Cormorant', serif;
+    color: #F3EDE7;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+
+.try-text {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 107.1%;
+    color: #6E6254;
+    font-family: 'Cormorant', serif;
+    margin-left: 127px;
+}
+
+.fem-desc-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 19px;
+    font-family: 'Cormorant', serif;
+    color: #6E6254;
+    margin-top: 22px;
+}
+
+.down-descr {
+    margin-top: 20px;
+    display: block;
+}
+
+.non-active-block {
+    display: block;
+
+}
+
+.active-block {
+    display: none;
+}
+
+
+.fem-blocks-wrappper {
+    display: flex;
+    max-width: 574px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.fem-block-card {
+    height: 29px;
+    border: 0.5px solid #566F54;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 107.1%;
+    /* or 21px */
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    padding-top: 2.5px;
+    color: #6E6254;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.fem-defenition-text {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 107.1%;
+    /* or 19px */
+    font-family: 'Cormorant', serif;
+    text-align: center;
+
+    color: #6E6254;
+}
+
+.who-i-am-block {
+    margin-top: 60px;
+    margin: auto;
+    padding-top: 42px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 107.1%;
+    /* or 39px */
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    margin-top: 20px;
+    color: #6E6254;
+}
+
+.download-and-repost-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.repost-wrappper,
+.download-wrapper {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 107.1%;
+    font-family: 'Cormorant', serif;
+    color: #6E6254;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.download-wrapper img {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.repost-wrappper {
+    display: none;
+}
+
+
+.if-we-have-no-fem-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 30px;
+    line-height: 107.1%;
+    /* or 19px */
+
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    color: #6E6254;
+}
+
+.active-fem-card {
+    background: rgba(110, 98, 84, 0.2);
+}
+
+.desctop-hidden {
+    display: none;
+}
+
+.desctop-show {
+    display: block;
+}
+
+.download-and-repost-block {
+    /* padding-bottom: 80px; */
+}
+
+.site-link {
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.site-link a {
+    color: #6E6254;
+}
+
+.click-word {
+    text-decoration: underline;
+    color: #6E6254;
+}
+
+@media (max-device-width: 1024px) {
+    body {
+        overflow-y: scroll;
+        min-height: 100vh;
+    }
+
+    .site-link {
+        margin-top: 5px;
+        font-size: 19px;
+    }
+
+    .desctop-hidden {
+        display: block;
+    }
+
+    .desctop-show {
+        display: none;
+    }
+
+    .main-logo-wrapper {
+        width: 100vw;
+        margin-top: 0px;
+    }
+
+    .main-logo-wrapper img {
+        width: 100vw;
+    }
+
+    .input-and-btn-wrapper {
+        display: block;
+        max-width: 93vw;
+        width: 93vw;
+        margin: auto;
+    }
+
+    .fem-input {
+        width: 93vw;
+        max-width: 93vw;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .fem-btn {
+        width: 93vw;
+        max-width: 93vw;
+        margin: auto;
+        margin-top: 10px;
+        height: initial;
+        padding-bottom: 10px;
+    }
+
+    .fem-desc-text {
+        max-width: 93vw;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .try-text {
+        margin-left: 0px;
+        max-width: 93vw;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .fem-blocks-wrappper {
+        max-width: 93vw;
+        margin: auto;
+        margin-top: 12px;
+    }
+
+    .who-i-am-block {
+        background-color: transparent;
+    }
+
+    .fem-defenition-text {
+        max-width: 93vw;
+        margin: auto;
+        margin-top: 60px;
+
+    }
+
+    .who-i-am-block {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 0px;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .decor-img-wrapper {
+        display: none;
+    }
+
+
+    .download-and-repost-block {
+        padding-bottom: 0px;
+    }
+
+    .download-and-repost-block {
+        margin-top: -10px;
+        z-index: 10;
+        padding-bottom: 60px;
+    }
+
+}
